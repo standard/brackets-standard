@@ -1,0 +1,20 @@
+{
+  "name": "brackets-standard",
+  "version": "0.0.1",
+  "description": "Brackets extension for standard, a simple linter with sensible defaults.",
+  "main": "main.js",
+  "keywords": [
+    "lint",
+    "linting",
+    "linter"
+  ],
+  "categories": "linting",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Isham Faizal <i@adimaja.com> (https://adimaja.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "standard": "^4.5.4"
+  }
+}
