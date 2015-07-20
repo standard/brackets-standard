@@ -1,6 +1,6 @@
 {
   "name": "brackets-standard",
-  "version": "4.5.4",
+  "version": "1.0.0",
   "title": "Standard Code Style",
   "description": "Brackets extension for standard, a simple linter with sensible defaults.",
   "main": "main.js",
