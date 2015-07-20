@@ -10,7 +10,7 @@ define(function (require, exports, module) {
 
   var JS_LANGUAGE = LanguageManager.getLanguageForExtension('js')
 
-  var standardDomain = new NodeDomain('standard-runner', ExtensionUtils.getModulePath(module, 'domain'))
+  var standardDomain = new NodeDomain('brackets-standard', ExtensionUtils.getModulePath(module, 'domain'))
 
   function scanFileAsync (textContent) {
     var d = $.Deferred()
@@ -28,6 +28,9 @@ define(function (require, exports, module) {
                                        : CodeInspection.Type.ERROR
             }
           })})
+      })
+      .fail(function (error) {
+        d.reject(error)
       })
     return d.promise()
   }
