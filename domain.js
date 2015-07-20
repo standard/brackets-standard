@@ -5,6 +5,7 @@ var Promise = require('bluebird')
 var getStandard = (function () {
   var standard = null
   var stdPromise = new Promise(function (resolve, reject) {
+    // Yes, it's a hack. Please send a PR if you have a better way.
     exec('npm root -g', function (error, stdout, stderr) {
       if (error) {
         reject(error)
@@ -36,7 +37,7 @@ function lintText (textContent, cb) {
     standard.lintText(textContent, {}, cb)
   })
   .catch(function (e) {
-    cb(e.message)
+    cb(e)
   })
 }
 

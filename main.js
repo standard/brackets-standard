@@ -30,7 +30,7 @@ define(function (require, exports, module) {
           })})
       })
       .fail(function (error) {
-        d.reject(error)
+        d.reject(error.message)
       })
     return d.promise()
   }
