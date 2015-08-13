@@ -3,7 +3,13 @@ var path = require('path')
 var fs = require('fs')
 var Promise = require('bluebird')
 
-var fileExists = Promise.promisify(fs.exists)
+var fileExists = function (p) {
+  return new Promise(function (resolve, reject) {
+    fs.exists(p, function (e) {
+      resolve(e)
+    })
+  })
+}
 
 function exec (cmd) {
   return new Promise(function (resolve, reject) {
