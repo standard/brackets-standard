@@ -2,7 +2,7 @@
 // Some modifications are made to make it work with requirejs,
 // which brackets uses.
 
-var exports = {}
+var exports = {};
 
 // The debug function is excluded entirely from the minified version.
 /* nomin */ var debug;
