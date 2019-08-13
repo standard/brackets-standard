@@ -1,7 +1,6 @@
 var cpExec = require('child_process').exec
 var path = require('path')
 var fs = require('fs')
-var Promise = require('bluebird')
 
 var fileExists = function (p) {
   return new Promise(function (resolve, reject) {

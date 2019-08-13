@@ -20,7 +20,4 @@
   },
   "author": "Isham Faizal <i@adimaja.com> (https://adimaja.com/)",
   "license": "MIT",
-  "dependencies": {
-    "bluebird": "^2.9.34"
-  }
 }
